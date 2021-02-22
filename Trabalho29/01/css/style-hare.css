@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+section {
+    width: 45%;
+    float: left;
+}
+section p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 7px;
+}
+aside {
+    width: 45%;
+    float: right;
+}
+img#hare-pag1 {
+    width: 550px;
+    height: 400px;
+    margin: 7px;
+}
+footer {
+    clear: both;
+}
+h1#escre {
+    font-size: 30pt;
+    text-align: center;
+}
+p#inscricao{
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: red; /* cor da borda */
+    color: white;
+    font-size: 30pt;
+    animation: ins 0.5s alternate infinite ease-in-out;
+    padding: 10px; 
+    text-align: center;
+    margin: 0px;
+
+}
+p#inscricao a {
+    color: white;
+    text-decoration: none;
+}
+@keyframes ins {
+    from {
+        filter: drop-shadow(0 0 0 red);
+    }
+    to {
+        filter: drop-shadow(0 0 5px red);
+    }
+}

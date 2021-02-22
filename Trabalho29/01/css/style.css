@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.interface{
+    width: 80%;
+    background-color: rgb(92, 179, 255);
+    margin: -40px auto auto auto;
+    padding: 0px 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+    
+}
+h1#name {
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(0, 0, 255); /* cor da borda */
+    color: white;
+    font-size: 40pt;
+    animation: neon 0.1s alternate infinite ease-in-out;
+    padding: 10px;  
+}
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 blue);
+    }
+    to {
+        filter: drop-shadow(0 0 5px blue);
+    }
+}
+ul#menu {
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 12pt;
+    padding: 5px;
+    margin: 8px;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -6%;
+}
+li {
+    display: inline-block;
+    margin: 3px;
+    color: white;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover{
+      text-decoration: underline;
+      color: blue;
+}
+hr#linha1 {
+    position: absolute;
+    margin-top: -5px;
+}
+footer {
+    padding: 5px;
+}
+p#copy {
+    border-top: solid rgb(255, 255, 255) 1px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+}
+
+p#redes {
+    text-align: center;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+}
+p#redes a {
+    text-decoration: none;
+    color: white;
+}
+p#redes a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+main {
+    border-top: solid rgb(255, 255, 255) 1px;
+}

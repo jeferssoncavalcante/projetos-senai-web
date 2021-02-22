@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style-inscricao.css"/>
+    <link rel="icon" type="image/icon" href="imagens/icon/b&b.png"/>
+    <title>Bitt&Byte</title>
+</head>
+<script>
+    function MsgERRO (ERRO) {
+        alert("Página em Construção").src = ERRO;
+    }
+</script>
+<body>
+    <div class="interface">
+        <header>
+           <a href="index.html"><h1 id="name">Bitt&Byte</h1></a>
+            <ul id="menu">
+                <li class="cima1"><a href="" onclick="MsgERRO('ERRO')">Linguagem de Marcação</a></li>
+                <li class="cima2"><a href="sop.html">Sistemas Operacionais</a></li>
+                <li class="baixo1"><a href="hare.html">Hardware e Redes</a></li>
+                <li class="baixo2"><a href="fpoo.html">Fundamentos de Programação</a></li>
+            </ul>
+        </header>
+        <main>
+            <form method="post" id="curriculo" action="mailto:jeferson.mdc@hotmail.com">
+				<fieldset id="identificacao"><legend>Identificação do Aluno</legend>
+					<p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="25" maxlength="35" placeholder="Nome Completo" required/></p>
+					<p><label for="cRG">RG:</label> <input type="text" name="tRg" id="cRG" size="20" maxlength="15" placeholder="Apenas Números" required/></p>
+					<p><label for="cCPF">CPF:</label> <input type="text" name="tCPF" id="cCPF" size="20" maxlength="15" placeholder="Apenas Números" required/></p>
+					<p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc" required/></p>
+					<fieldset id="sexo"><legend>Sexo</legend>
+						<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label><br><br>
+						<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+					</fieldset>
+					<fieldset>
+						<legend>Estado Civil</legend>
+							<select>
+								<option value="" selected>Selecione</option>
+								<option>Solteiro(a)</option>
+								<option>Casado(a)</option>
+								<option>Viúvo(a)</option>
+								<option>Divorciado(a)</option>
+							</select>
+					</fieldset>
+					<fieldset><legend>Nacionalidade</legend>
+						<input type="radio" name="tNac" id="cBr" checked/><label for="cBr">Brasileiro</label>
+						<input type="radio" name="tNac" id="cEs"/><label for="cEs">Estrangeiro</label>
+						<input type="radio" name="tNac" id="cNat"/><label for="cNat">Naturaizado:</label> <input type="text" name="tNat" id="ctNat" size="25" maxlength="20"/>
+					</fieldset>
+					
+				</fieldset>
+				<fieldset id="endereço"><legend>Endereço do Aluno</legend>
+						<p><label for="cEnd">Endereço:</label> <input type="text" name="tEnd" id="cEnd" size="45" maxlength="40" placeholder="Rua, Av, Etc..." required/> <label for="cBair">Bairro</label> <input type="text" name="tBair" id="cBair" size="25" maxlength="20" placeholder="Digite o Bairro"/></p>
+						<p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999" value="0"/> <label for="cComp">Complemento:</label> <input type="text" name="tComp" id="cComp" size="20" maxlength="15" placeholder="Casa, Apto, Bloco, Tr Etc..." required/></p>
+						<p><label for="cCep">CEP:</label> <input type="text" name="tCep" id="cCep" size="15" maxlength="12" placeholder="Sómente Números" required/></p>
+						<p><legend>País:</legend>
+								<select>
+									<option value="" selected>Selecione</option>
+									<option>Alemanha</option>
+									<option selected>Brasil</option>
+									<option>Canadá</option>
+									<option>Espanha</option>
+									<option>Estados Unidos</option>
+									<option>França</option>
+									<option>Holanda</option>
+									<option>Itália</option>
+					            </select></p>
+							<p><legend>Estado:</legend>
+								<select>
+									<option value="" selected>Selecione</option>
+									<option>Ceará</option>
+									<option>Distrito Federal</option>
+									<option>Minas Gerais</option>
+									<option>Rio de Janeiro</option>
+									<option>Rio Grande do Sul</option>
+									<option>Santa Catarina</option>
+									<option>São Paulo</option>
+								</select></p>
+								<p><label for="cCid">Cidades:</label> <input type="text" name="tCid" id="cCid" size="25" maxlength="20" placeholder="Sua Cidade" list="cidades" required/>
+								<datalist id="cidades">
+									<option value="Fortaleza"></option>
+									<option value="Juazeiro do Norte"></option>
+									<option value="Brazlândia"></option>
+									<option value="Núcleo Bandeirante"></option>
+									<option value="Belo Horizonte"></option>
+									<option value="Betim"></option>
+									<option value="Niterói"></option>
+									<option value="Angra dos Reis"></option>
+									<option value="Porto Alegre"></option>
+									<option value="Pelotas"></option>
+									<option value="Florianópolis"></option>
+									<option value="Balneário Cambouriú"></option>
+									<option value="São Paulo"></option>
+									<option value="São Bernardo do Campo"></option>
+								</datalist></p>
+				</fieldset>
+				<fieldset id="perfil"><legend>Perfil Do Aluno</legend>
+					<p><label for="cDesc">Descrição:</label>
+						<textarea name="tDesc" id="cDesc" cols="50" rows="10" placeholder="(Fale um pouco sobre você)"></textarea></p>
+				</fieldset>
+				<fieldset id="formacao"><legend>Formação do Aluno</legend>
+					<fieldset id="escolaridade"><legend>Escolaridade</legend>
+						<p><label for="cEsc">Nome da Escola:</label> <input type="text" name="tEsc" id="cEsc" size="40" maxlength="35" placeholder="Digite o nome da sua escola" required/></p>
+						<p><label><legend>Curso:</legend></label>
+										<select name="tCur" id="cCur" required>
+											<option value="" selected>Selecione</option>
+											<option>Ensino Fundamental Completo</option>
+											<option>Ensino Fundamental Incompleto</option>
+											<option>Ensino Médio Completo</option>
+											<option>Ensino Médio Incompleto</option>
+											<option>Ensino Superior</option>
+											<option>Curso Profissionalizante</option>
+											<option>Curso Técnico</option>
+										</select></p>
+						<p><label for="cIni">Data de Início:</label> <input type="date" name="tIni" id="cIni" required/>
+						<label for="cTerm">Data do Término:</label> <input type="date" name="tTerm" id="cTerm" required/></p>
+					</fieldset>
+				    <fieldset id="contato"><legend>Contato e Redes Sociais</legend>
+					    <p><label for="cMail">Email:</label> <input type="text" name="tMail" id="cMail" size="120" maxlength="110" required/></p>
+					    <p><label for="cTel">Telefone/Cel:</label> <input type="text" name="tTel" id="cTel" size="113" maxlength="110" required/></p>
+					    <p><label for="cFac">Facebook:</label> <input type="text" name="tFac" id="cFac" size="116" maxlength="110"/></p>
+					    <p><label for="cIns">Instagram:</label> <input type="text" name="tIns" id="cIns" size="116" maxlength="110"/></p>
+					    <p><label for="cYou">Youtube:</label> <input type="text" name="tYou" id="cYou" size="118" maxlength="110"/></p>
+					    <p><label for="cLink">Linkedin:</label> <input type="text" name="tLink" id="cLink" size="117" maxlength="110"/></p>
+				    </fieldset>
+			<input type="image" src="imagens/botao-enviar-hi.png" width="120px" height="40px"/>
+		</form>
+            
+        </main>
+        <footer>
+            <p id="copy">Copyright &copy; 2020</p>
+            <p id="redes"><a href="" onclick="MsgERRO('ERRO')">Facebook</a> | <a href="" onclick="MsgERRO('ERRO')">Twiter</a></p>
+        </footer>
+    </div>
+</body>
+</html>

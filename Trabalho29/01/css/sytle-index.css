@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+p#principal {
+    font-size: 20pt;
+}
+p.secundario {
+    font-size: 15pt;
+}
+ul.images li a {
+    text-decoration: none;
+}
+ul.images li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+ul.images li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 15pt;
+    line-height: 570px;
+    padding: 4px;
+}
+ul.images li:hover {
+    -webkit-transform: scale(1.3);
+}
+ul.images li:hover span {
+    opacity: 1;
+}
+ul.images {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul.images li {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all .3s ease-in;
+}
+ul.images li#lima{
+    background: url('../imagens/lima.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-color: #ffffff;
+}
+ul.images li#lima:hover {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+ul.images li#sop{
+    background: url('../imagens/sop.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 900px 700px;
+    background-color: #ffffff;
+}
+ul.images li#sop:hover {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+ul.images li#hare{
+    background: url('../imagens/hare.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 900px 700px;
+    background-color: #ffffff;
+}
+ul.images li#hare:hover {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+ul.images li#fpoo{
+    background: url('../imagens/fpoo.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 900px 700px;
+    background-color: #ffffff;
+}
+ul.images li#fpoo:hover {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+h1#escre {
+    font-size: 30pt;
+    text-align: center;
+}
+p#inscricao{
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: red; /* cor da borda */
+    color: white;
+    font-size: 30pt;
+    animation: ins 0.5s alternate infinite ease-in-out;
+    padding: 10px; 
+    text-align: center;
+    margin: 0px;
+
+}
+p#inscricao a {
+    color: white;
+    text-decoration: none;
+}
+@keyframes ins {
+    from {
+        filter: drop-shadow(0 0 0 red);
+    }
+    to {
+        filter: drop-shadow(0 0 5px red);
+    }
+}
