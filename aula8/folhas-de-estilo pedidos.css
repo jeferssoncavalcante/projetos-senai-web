@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.interface {
+    width: 90%;
+    margin: -20px auto auto auto;
+    background-color: rgba(128, 0, 0, 1);
+    padding: 0px 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+img#logo {
+    width: 280px;
+    height: 250px;
+    position: relative;
+    margin-left: 900px;
+    margin-bottom: 15px;
+
+}
+
+ul.nav-menu {
+    text-transform: uppercase;
+    list-style: none;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 150px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    margin: 8px;
+    color: white;
+    background-color: rgb(139, 0, 0);
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover{
+      text-decoration: underline;
+}
+
+hr#linha1 {
+    margin-top: -40px;
+}
+
+footer {
+    padding: 5px;
+}
+
+p#copy {
+    border-top: solid rgb(255, 255, 255) 1px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+}
+
+p#redes {
+    text-align: center;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(255, 255, 255)
+}
+.conteudo{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.card{
+    background: 255, 255, 255;
+    width: 310px;
+    margin: 10px;
+    box-shadow: 1px 8px 18px;
+}
+
+.card-cabecalho{
+    margin: 30px;
+    color: 255, 255, 255;
+    font-family:times new roman;
+    text-align: center;
+
+}
+.card-rodape{
+    text-align: center;
+    color: 255, 255, 255; 
+}
+.card-corpo{
+    padding: 2px;
+    text-align: center;
+    margin: -5px
+}
+img{
+    margin-bottom: -55px
+}
+h1{
+    margin-bottom: 10px
+}
+label{
+    font-weight: bolder;
+    font-size: 26px;
+}
+legend{
+    font-weight: bolder;
+    font-size: 26px;
+}

@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.interface {
+    width: 80%;
+    margin: -20px auto auto auto;
+    background-color: rgba(128, 0, 0, 1);
+    padding: 0px 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+img#logo {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    margin-left: 950px;
+
+}
+
+
+ul.nav-menu {
+    text-transform: uppercase;
+    list-style: none;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 280px;
+    color: white;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    margin: 8px;
+    color: white;
+    background-color: rgb(139, 0, 0);
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover{
+      text-decoration: underline;
+}
+
+hr#linha1 {
+    margin-top: -40px;
+}
+
+footer {
+    padding: 5px;
+}
+
+p#copy {
+    border-top: solid rgb(255, 255, 255) 1px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+}
+
+p#redes {
+    text-align: center;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(255, 255, 255)
+}
+
+main {
+}
+.conteudo{
+    width: 300px;
+    height: 300px;
+    display: inline-table;
+}
+.entradas{
+    color: rgb(255, 255, 255)
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0px 2px 10px;
+}
+
+.entradas-rodape{
+    color: white;
+    margin: 11px;
+    font-size: 16px;
+
+}
+
+.entradas-cabecalho{
+    margin:11px;
+    
+}
+
+.entradas-titulo{
+    color: white; 
+  font-size: 16px;
+}
+
+
+ 
+.entradas-corpo{
+
+}
+
+.entradas-img{
+    width: 100%;
+}

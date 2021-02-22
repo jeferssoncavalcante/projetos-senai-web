@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="imagens/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css-javascript/folha-de-estilo-cabeçalho.css"/>
+    <link rel="stylesheet" type="text/css" href="css-javascript/folha-estilo-corpo.css"/>
+    <title>Document</title>
+</head>
+<script>
+    function mudaIMG (IMG) {
+        document.getElementById("logo").src = IMG;
+    }
+    function MsgERRO (ERRO) {
+        alert("Página em Construção").src = ERRO;
+    }
+    function Reservado (Rsr) {
+        alert("Seu Pedido foi enviado à Cozinha").src = Rsr;
+    }
+</script>
+<body>
+    <div class="interface">
+        <header>
+            <img id="logo" src="imagens/logo-e-cardapio.png" alt="Prato Principal"/>
+            <ul class="nav-menu">
+                <li><a href="index.html">Principal</a></li>
+                <li onmouseover="mudaIMG('imagens/entradas.png')" onmouseout="mudaIMG('imagens/logo-e-cardapio.png')"><a href="entradas.html">Entradas</a></li>
+                <li onmouseover="mudaIMG('imagens/prato-principal.png')" onmouseout="mudaIMG('imagens/logo-e-cardapio.png')"><a href="pratos-principais.html">Pratos Principais</a></li>
+                <li onmouseover="mudaIMG('imagens/bebidas3.png')" onmouseout="mudaIMG('imagens/logo-e-cardapio.png')"><a href="bebidas.html">Bebidas</a></li> 
+                <li onmouseover="mudaIMG('imagens/sobremesas.png')" onmouseout="mudaIMG('imagens/logo-e-cardapio.png')"><a href="sobremesas.html">Sobremesas</a></li>
+            </ul>
+            <hr id="linha1">
+        </header>
+
+        <main>
+            <div class="cards">
+                <div class="promo">
+                    <h1>Conheça nossas promoções</h1>
+                    <p>Todos os dias temos algum acompanhamento gratis</p>
+                    <p>Todas as sextas temos porções gratis para acompanhar o seu happy hour</p>
+                    <p>Consulte os Garçons preços e mais informações</p>
+                </div>
+                <div class="card">
+                    <button class="Botao" onclick="Reservado('Rsr')">Reserve Agora</button>
+                    <div class="cabeçalho"><h1>Segunda-feira</h1><h2>Virado a Paulista</h2></div>
+                    <div class="corpo-card">
+                        <img id="imagem-pratos" src="imagens/imagens-full/prato-segunda.jpg"/>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="Botao" onclick="Reservado('Rsr')">Reserve Agora</button>
+                    <div class="cabeçalho"><h1>Terça-feira</h1><h2>Dobradinha</h2></div>
+                    <div class="corpo-card">
+                        <img id="imagem-pratos" src="imagens/imagens-full/prato-terça.jpg"/>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="Botao" onclick="Reservado('Rsr')">Reserve Agora</button>
+                    <div class="cabeçalho"><h1>Quarta-feira</h1><h2>Feijoada</h2></div>
+                    <div class="corpo-card">
+                        <img id="imagem-pratos" src="imagens/imagens-full/prato-quarta.jpg"/>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="Botao" onclick="Reservado('Rsr')">Reserve Agora</button>
+                    <div class="cabeçalho"><h1>Quinta-feira</h1><h2>Macarrão</h2></div>
+                    <div class="corpo-card">
+                        <img id="imagem-pratos" src="imagens/imagens-full/prato-quinta.webp"/>
+                    </div>
+                </div>
+                <div class="card-baixo">
+                    <button class="Botao" onclick="Reservado('Rsr')">Reserve Agora</button>
+                    <div class="cabeçalho"><h1>Sexta-feira</h1><h2>Peixe Frito</h2></div>
+                    <div class="corpo-card">
+                        <img id="imagem-pratos" src="imagens/imagens-full/prato-sexta.jpg"/>
+                    </div>
+                </div>
+                <div class="card-baixo">
+                    <button class="Botao" onclick="Reservado('Rsr')">Reserve Agora</button>
+                    <div class="cabeçalho"><h1>Sabádo</h1><h2>Feijoada</h2></div>
+                    <div class="corpo-card">
+                        <img id="imagem-pratos" src="imagens/imagens-full/prato-quarta.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="copy">Copyright &copy; 2020</p>
+            <p id="redes"><a href="" onclick="MsgERRO('ERRO')">Facebook</a> | <a href="" onclick="MsgERRO('ERRO')">Twiter</a></p>
+        </footer>
+    </div>
+</body>
+</html>

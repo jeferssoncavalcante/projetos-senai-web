@@ -1,0 +1,60 @@
+div.card {
+    background: rgb(139, 0, 0);
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, .5);
+}
+div.card-baixo {
+    background: rgb(139, 0, 0);
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    margin-left: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, .5);
+}
+button {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 230px;
+    background-color: rgba(255, 255, 255,.3);
+}
+div.cards {
+   display: flex;
+   flex-wrap: wrap;
+}
+div.corpo-card img {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+div.cabeçalho {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 5pt;
+}
+div.promo {
+    background: rgb(139, 0, 0);
+    width: 1135px;
+    height: 240px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, .5);
+}
+div.promo h1 {
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+}
+div.promo p {
+    text-align: center;
+    color: rgb(255,255, 255);
+    font-size: 25pt;
+
+}

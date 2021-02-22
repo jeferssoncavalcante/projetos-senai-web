@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="imagens/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css-javascript/folhas-de-estilo-nelson.css"/>
+    <title>Document</title>
+</head>
+<script>
+    function mudaIMG (IMG) {
+        document.getElementById("logo").src = IMG;
+    }
+    function MsgERRO (ERRO) {
+        alert("Página em Construção").src = ERRO;
+    }
+</script>
+<body>
+    <div class="interface">
+        <header>
+            <img id="logo" src="imagens/prato-principal.png" alt="Prato Principal"/>
+            <ul class="nav-menu">
+                <li onmouseover="mudaIMG('imagens/logo-e-cardapio.png')" onmouseout="mudaIMG('imagens/prato-principal.png')"><a href="index.html">Principal</a></li>
+                <li onmouseover="mudaIMG('imagens/entradas.png')" onmouseout="mudaIMG('imagens/prato-principal.png')"><a href="entradas.html">Entradas</a></li>
+                <li onmouseover="mudaIMG('imagens/prato-principal.png')" onmouseout="mudaIMG('imagens/prato-principal.png')"><a href="pratos-principais.html">Pratos Principais</a></li>
+                <li onmouseover="mudaIMG('imagens/bebidas3.png')" onmouseout="mudaIMG('imagens/prato-principal.png')"><a href="bebidas.html">Bebidas</a></li> 
+                <li onmouseover="mudaIMG('imagens/sobremesas.png')" onmouseout="mudaIMG('imagens/prato-principal.png')"><a href="sobremesas.html">Sobremesas</a></li>
+            </ul>
+            <hr id="linha1">
+        </header>
+
+        <main>
+            <center><h1 id="letra"><strong>SEJAM TODOS BEM VINDOS AO RESTAURANTE DOS PEAKY BLINDERS</strong></h1></center>
+<div class="conteudo">
+            <div class="pagprincipal">
+            <strong><h2 id="kkk">Carne a Parmegiana.</h2></strong>
+            <div class="comida">
+            <img src="imagens\prato-comida.png">
+        </div>
+        <div class="rodape">
+        	<p id="parmegiana">Preço: R$21,99</p>
+        </div>
+      </div>
+
+            <div class="strogo">
+            <strong><h2 id="kkk">Prato de Strogonoff.</h2></strong>
+            <div class="comida">
+            <img src="imagens\strogonoff.png">
+        </div>
+        <div class="rodape">
+        	<p id="strogonoff">Preço: R$20,99</p>
+        </div>
+      </div>
+
+            <div class="feijo">
+            <strong><h2 id="kkk">Prato de Feijoada.</h2></strong>
+            <div class="comida">
+            <img src="imagens\feijoada.png">
+        </div>
+        <div class="rodape">
+        	<p id="strogonoff">Preço: R$23,99</p>
+        </div>
+      </div>
+
+
+      <div class="pagprincipal">
+            <strong><h2 id="kkk">Costela assada.</h2></strong>
+            <div class="comida">
+            <img src="imagens\costela.png">
+        </div>
+        <div class="rodape">
+        	<p id="parmegiana">Preço: R$22,99</p>
+        </div>
+      </div>
+
+</div>
+        </main>
+
+        <footer>
+            <p id="copy">Copyright &copy; 2020</p>
+            <p id="redes"><a href="" onclick="MsgERRO()">Facebook</a> | <a href="" onclick="MsgERRO()">Twiter</a></p>
+        </footer>
+
+</body>
+</html>
