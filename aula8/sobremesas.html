@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="folhas-de-estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="folhas-de-estilo pedidos.css"/>
     <title>Document</title>
 </head>
 <script>
@@ -13,6 +13,9 @@
     }
     function MsgERRO (ERRO) {
         alert("Página em Construção").src = ERRO;
+    }
+    function Submit (Sub) {
+        alert("Pedido Enviado !").src = Sub;
     }
 </script>
 <body>
@@ -23,76 +26,58 @@
                 <li onmouseover="mudaIMG('logo-e-cardapio.png')" onmouseout="mudaIMG('sobremesas.png')"><a href="index.html">Principal</a></li>
                 <li onmouseover="mudaIMG('entradas.png')" onmouseout="mudaIMG('sobremesas.png')"><a href="entradas.html">Entradas</a></li>
                 <li onmouseover="mudaIMG('prato-principal.png')" onmouseout="mudaIMG('sobremesas.png')"><a href="pratos-principais.html">Pratos Principais</a></li>
-                <li onmouseover="mudaIMG('imagens/bebidas3.png')" onmouseout="mudaIMG('sobremesas.png')"><a href="bebidas.html">Bebidas</a></li> 
+                <li onmouseover="mudaIMG('bebidas3.png')" onmouseout="mudaIMG('sobremesas.png')"><a href="bebidas.html">Bebidas</a></li> 
                 <li onmouseover="mudaIMG('sobremesas.png')" onmouseout="mudaIMG('sobremesas.png')"><a href="sobremesas.html">Sobremesas</a></li>
             </ul>
             <hr id="linha1">
         </header>
 
         <main>
-            
             <div class="conteudo">          
-            <div class="card" height="1000px">
+            <div class="card">
                 <div class="card-cabecalho">
                     <img src="tiramisu.jpg" alt="tiramisu" >
                 </div>
                 <div class="card-corpo">
-                    <h1>Tiramisu</h1>
+                <h1>Tiramisu  <br>
+                   R$ 15,00</h1>
                 </div>
                 <div class="card-rodape">
-                    <p>
-                        Consiste em camadas de biscoitos de champagne, embebidas em café,  entremeadas por um creme à base de queijo mascarpone, creme de leite fresco, ovos, açúcar, vinho do tipo Marsala, e polvilhadas com cacau em pó e café
-                    </p> 
-                    <ul>
-                    <li ><a href="Pedidos.html"><button class="botao btn-laranja">Faça ja o seu pedido!</button></a>
-                    </li>
-                    </ul>
+                    
                 </div>
             </div>
         </div>
     
         <div class="conteudo">          
-            <div class="card" height="1000px">
+            <div class="card">
                 <div class="card-cabecalho">
                     <img src="tortalimao.jpg" alt="torta de limao" >
                 </div>
                 <div class="card-corpo">
-                    <h1>Torta de Limão</h1>
+                  <h1>Torta de limaão <br>
+                   R$ 7,00</h1>
                 </div>
                 <div class="card-rodape">
-                    <p>
-                        Torta cozida no forno e recheada com um creme a base de limão.
-                    </p>
-                    <ul>
-                    <li ><a href="Pedidos.html"><button class="botao btn-laranja">Faça ja o seu pedido!</button></a>
-                    </li>
-                    </ul>
+                 
                 </div>
             </div>
         </div>
         
         <div class="conteudo">          
-            <div class="card" height="1000px">
+            <div class="card">
                 <div class="card-cabecalho">
                     <img src="churrosgourmet.jpg" alt="churros" >
                 </div>
                 <div class="card-corpo">
-                    <h1>Churros</h1>
+                    <h1>Churros Gourmet <br>
+                   R$ 5,00</h1>
                 </div>
                 <div class="card-rodape">
-                    <p>
-                        Massa à base de farinha de trigo e água, em formato cilíndrico e frito em óleo vegetal.Com cobertura de diversos sabores.
-                    </p>
-                    <ul>
-                    <li ><a href="Pedidos.html"><button class="botao btn-laranja">Faça ja o seu pedido!</button></a>
-                    </li>
-                    </ul>
+                    
                 </div>
             </div>
         </div>
-
-
-        </main>
+    </main>
 
         <footer>
             <p id="copy">Copyright &copy; 2020</p>
