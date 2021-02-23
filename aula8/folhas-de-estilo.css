@@ -77,6 +77,13 @@ a {
     text-align: center;
 
 }
+.card{
+    background: 255, 255, 255;
+    width: 310px;
+    margin: 10px;
+    box-shadow: 1px 8px 18px;
+    height: 300px;
+}
 .card-rodape{
     text-align: center;
     color: 255, 255, 255; 
