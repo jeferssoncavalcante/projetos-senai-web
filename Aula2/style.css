@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+    padding: 20px;
+}
+div#fora {
+    position: relative;
+    margin: auto;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0);
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+    background: url(thumb-1920-922290.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+div#dentro {
+    position: relative;
+    margin: auto;
+    margin-top: 12%;
+    width: 550px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0);
+    padding: 10px;
+    background: url();
+    border: 1px solid rgb(255, 255, 255);
+}
+div#ctd {
+   position: relative;
+   margin-top: 15%;
+   color: red;
+   font-size: 25pt;
+}
+button.btn {
+    font-size: 15pt;
+    background-color: white;
+    color: black;
+}
+button.btn:hover{
+    padding: 5px;
+    background-color: black;
+    color: whitesmoke;
+}
+div.result {
+    font-size: 25pt;
+    position: relative;
+    margin-top: 50px;
+}
