@@ -12,7 +12,7 @@ header p {
 div#tabela {
     position: relative;
     margin: auto;
-    background-color: rgb(124, 196, 255);
+    background-color: #0589F8;
     box-shadow: 10px 10px 3px rgb(0, 0, 0);
     width: 80%;
     padding: 20px;
@@ -28,6 +28,12 @@ table {
     border-spacing: 0px;
     padding: 20px;
 }
+table#tabela-produtos tr:nth-child(odd) {
+	background-image: linear-gradient(50deg,#070CF0, #0440D9);
+	}
+table#tabela-produtos tr:nth-child(even) {
+	background-image: linear-gradient(50deg,#3B04D9, #8505F8);
+	}
 table td.cd{
     text-align: right;
 }
@@ -35,11 +41,10 @@ table td {
     text-align: center;
     border: 1px solid white;
     padding: 5px;
-    background-color: rgb(62, 146, 255);
 }
 table th {
     border: 1px solid white;
-    background-color: rgb(4, 0, 255);
+    background-color: #8505F8;
 }
 button {
     padding: 10px;
