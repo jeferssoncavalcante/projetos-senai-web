@@ -32,7 +32,7 @@ function fazTudo(){
 }*/
 carregaJSON('lista-de-items.json')
 function fazTudo(){
-    for (i = 0; i <= 50; i++) {
+    for (i = 0; i < 50; i++) {
         atualizaTabela(dados[i].product, dados[i].price)
     }
     
