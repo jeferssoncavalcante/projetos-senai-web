@@ -10,6 +10,10 @@ function atualizaTabela(Produtos, Preços) {
     document.getElementById("tabela-produtos").lastElementChild.innerHTML += `<tr><td>${Produtos}</td><td class="cd">${Preços}</td></tr>`;
     atualizaFeedback();
 }
+/*function atualizaTabela(image, value) {
+    document.getElementById("tabela-produtos").lastElementChild.innerHTML += `<div><img src="${image}" alt=""></div><div>${value}</div>`;
+    atualizaFeedback();
+}*/
 function atualizaFeedback(){
     document.getElementById("feedback").textContent = `${document.getElementById("tabela-produtos").lastElementChild.childElementCount}`;
 }
@@ -35,5 +39,10 @@ function fazTudo(){
     for (i = 0; i < 50; i++) {
         atualizaTabela(dados[i].product, dados[i].price)
     }
-    
 }
+/*carregaJSON('images.json')
+function fazTudo(){
+    for (i = 0; i < 5; i++) {
+        atualizaTabela(dados[i].product, dados[i].price)
+    }
+}*/
